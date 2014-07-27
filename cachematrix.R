@@ -15,10 +15,10 @@ list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
 
 ## cacheSolve
-## function to calculate the inverse of the matrix returned by the previous function
+## function to calculate the inverse of the matrix returned by the previous function 'makeCacheMatrix'
 
 cacheSolve <- function(x,...){
-m <- x$getinverse()
+m <- x$getinverse() ## to return the inverse of matrix
 if(!is.null(m)){
 message("Cached Data")
 return(m)
